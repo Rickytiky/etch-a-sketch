@@ -1,0 +1,240 @@
+body {
+    font-family: "Jersey 15", sans-serif;
+    background-image: url(./img/bg.svg);
+    background-size: 250px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    padding-top: 15px;
+}
+
+.roof-up-shadow {
+    width: 300px;
+    height: 5px;
+    background-color: #331D1D;
+}
+
+.roof {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 70px;
+
+    /* вогнутые углы */
+    background: 
+        radial-gradient(circle at top left, transparent 30px, #9F3434 0) top left,
+        radial-gradient(circle at top right, transparent 30px, #9F3434 0) top right;
+    /* Делим фон на левую и правую части, чтобы градиенты не перекрывали друг друга */
+    background-size: 51% 100%;
+    background-repeat: no-repeat;
+    font-size: 2.5rem;
+    color: #F5CC65;
+    text-shadow: 2px 2px 0 #331D1D;
+}
+
+.roof-down-shadow {
+    width: 340px;
+    height: 5px;
+    background-color: #331D1D;
+    align-self: flex-end;
+}
+
+.upper-wall {
+    align-items: center;
+    height: 46px;
+}
+
+.upper-wall, .bottom-wall {
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    background-color: #F2D1B5;
+    border: solid #9F3434;
+    box-sizing: border-box;
+    border-width: 5px;
+    border-top: none;
+    border-bottom: none;
+    box-shadow: 5px 0px 0 #331D1D;
+}
+
+.new-field {
+    width: 294px;
+    height: 30px;
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: #331D1D;
+    background-color: #F5CC65;
+    border: solid #331D1D;
+    border-width: 3px;
+    box-shadow: 2px 2px 0 #9F3434;
+}
+
+.porch-roof {
+    width: 340px;
+    height: 8px;
+    background-color: #9F3434;
+}
+
+.porch-roof-shadow {
+    width: 330px;
+    height: 5px;
+    background-color: #331D1D;
+    margin-left: 10px;
+}
+
+.bottom-wall {
+    height: 76px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.eraser, .clear, .rainbow {
+    margin-top: 8px;
+    width: 87px;
+    height: 30px;
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: #331D1D;
+    background-color: #F0F0E1;
+    border: solid #331D1D;
+    border-width: 3px;
+    box-shadow: 2px 2px 0 #9F3434;
+}
+
+.bottom-wall .clear {
+    height: 58px;
+}
+
+.ground-up {
+    width: 350px;
+    height: 10px;
+    background-color: #331D1D;
+}
+
+.ground-down {
+    width: 360px;
+    height: 10px;
+    background-color: #331D1D;
+}
+
+.railing-container {
+    margin-top: -55px;
+    width: 344px;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-railings, .right-railings {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.small, .medium, .big, .cross, .step-up, .step-down {
+    background-color: #9F3434;
+}
+
+.small {
+    width: 5px;
+    height: 28px;
+    margin: 20px 2px;
+}
+
+.medium {
+    width: 5px;
+    height: 48px;
+    margin: 0 60px;
+}
+
+.big {
+    width: 8px;
+    height: 53px;
+    margin: 0 -40px;
+}
+
+.cross {
+    width: 100px;
+    height: 8px;
+    margin: 40px -60px;
+}
+
+.step-up {
+    width: 88px;
+    height: 5px;
+    margin-top: 35px;
+}
+
+.step-down {
+    width: 88px;
+    height: 5px;
+    margin-top: 5px;
+}
+
+.field-container {
+    margin-top: 5px;
+    padding: 0 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 360px;
+    height: 390px;
+    background-color: #F2D1B5;
+    border: solid #331D1D;
+    box-sizing: border-box;
+    border-width: 3px;
+    box-shadow: 3px 3px 0 #331D1D;
+}
+
+.field-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: #331D1D;
+}
+
+.field-text-left {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #9F3434;
+}
+
+.field-text-right {
+    font-size: 1.2rem;
+    color: #331D1D;
+}
+
+.field {
+    width: 340px;
+    height: 340px;
+    background-color: #F0F0E1;
+    border: solid #331D1D;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    width: 360px;
+    height: 40px;
+    background-color: #9F3434;
+    border: solid #331D1D;
+    box-sizing: border-box;
+    border-width: 3px;
+    font-size: 0.7rem;
+    color: #F5CC65;
+    box-shadow: 3px 3px 0 #331D1D;
+}
